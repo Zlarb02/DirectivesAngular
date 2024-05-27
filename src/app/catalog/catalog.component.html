@@ -1,0 +1,22 @@
+<p>catalog works!</p>
+<ul> ProduitSansPrix
+    <li *ngFor="let p of ProduitSansPrix()"> nom {{ p.nom }} <p ng *ngIf="p.prix">prix {{ p.prix }}</p>
+        <p ng *ngIf="p.promotion">promotion {{
+            p.promotion }}</p>
+    </li>
+</ul><br>
+<br>
+<ul> ProduitEnPromotion
+    <li *ngFor="let p of ProduitEnPromotion()">nom {{ p.nom }} <p ng *ngIf="p.prix">prix {{ p.prix }}</p>
+        <p ng *ngIf="p.promotion">promotion {{
+            p.promotion }}</p>
+    </li>
+</ul>
+<br>
+<br>
+<ul>le reste
+    <li *ngFor="let p of ProduitSansPromotionAvecPrix()">nom {{ p.nom }} <p ng *ngIf="p.prix">prix {{ p.prix }}</p>
+        <p ng *ngIf="p.promotion">promotion {{
+            p.promotion }}</p>
+    </li>
+</ul>
